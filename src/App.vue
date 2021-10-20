@@ -42,36 +42,24 @@ export default {
       this.tasks = this.tasks.map((task) => 
         task.id === id ? {...task, reminder: !task.reminder} : task
       )
+    }, 
+    async fetchTasks(){
+      const res = await fetch(`http://localhost:5000/tasks`)
+      
+      const data = await res.json()
+
+      return data;
+    },
+        async fetchTask(id){
+      const res = await fetch(`http://localhost:5000/tasks/${id}`)
+      
+      const data = await res.json()
+
+      return data;
     }
   },
-  created(){
-    this.tasks = [
-      {
-        id: 1,
-        text: 'learn Vue',
-        day: 'October 19th at 9:00am',
-        reminder: true
-      },
-            {
-        id: 2,
-        text: 'go for a run',
-        day: 'October 19th at 6:00pm',
-        reminder: true
-      },
-            {
-        id: 3,
-        text: 'eat cookies',
-        day: 'October 19th at 4:30pm',
-        reminder: false
-      },
-            {
-        id: 4,
-        text: 'drink coffee',
-        day: 'October 19th at 11:30am',
-        reminder: false
-      },
-   
-    ]
+  async created(){
+    this.tasks = this.fetchTasks()
   }
 }
 </script>
