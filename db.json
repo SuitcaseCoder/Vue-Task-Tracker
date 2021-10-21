@@ -3,8 +3,8 @@
     {
       "id": "1",
       "text": "learn Vue",
-      "day": "October 19th at 9:00am",
-      "reminder": true
+      "day": "October 19th at 9:30am",
+      "reminder": false
     },
     {
       "id": "2",
@@ -14,15 +14,21 @@
     },
     {
       "id": "3",
-      "text": "Go for a walk",
-      "day": "October 21th at 7:00am",
-      "reminder": true
+      "text": "drink coffee",
+      "day": "October 21st at 2pm",
+      "reminder": false
     },
     {
       "id": 24274,
       "text": "check laundry",
       "day": "today @ 25 minutes",
       "reminder": true
+    },
+    {
+      "text": "shower",
+      "day": "today @ lunch",
+      "reminder": true,
+      "id": 24275
     }
   ]
 }
