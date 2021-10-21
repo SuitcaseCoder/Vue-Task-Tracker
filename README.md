@@ -8,11 +8,11 @@ This app allows people to create and delete tasks. It also allows users to toggl
 
 # Visuals
 ### Home Page
-   ![homepage](/assets/task-tracker-home.png)
+   ![homepage](src/assets/task-tracker-home.png)
 ### Add Task
-  ![add task form](/assets/task-tracker-addTask.png)
+  ![add task form](src/assets/task-tracker-addTask.png)
 ### About Page
-    ![about page](/assets/task-tracker-about.png)
+   ![about page](src/assets/task-tracker-about.png)
 
 # Resources:
  I want to make sure to reference [this](https://youtu.be/qZXt1Aom3Cs) video again from Traversy media for this video. 
